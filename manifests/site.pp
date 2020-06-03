@@ -8,12 +8,8 @@ define wordpress::site(
                         $srcdir='/usr/local/src',
 
 			                ) {
-
-	if ! defined(Class['wordpress'])
-	{
-		fail('You must include the wordpress base class before using any wordpress defined resources')
-	}
-
+  include ::wordpress
+  
   Exec {
     path => '/usr/sbin:/usr/bin:/sbin:/bin',
   }
@@ -39,9 +35,4 @@ define wordpress::site(
     command => "cp -r ${srcdir}/wordpress/* ${basedir}",
     creates => "${basedir}/wp-login.php",
   }
-
-
-
-
-
 }
