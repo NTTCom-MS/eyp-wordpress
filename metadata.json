@@ -2,7 +2,7 @@
   "name": "eyp-wordpress",
   "version": "0.1.1",
   "author": "eyp",
-  "summary": "wordpress DEMO role / DEMO - DO NOT USE FOR PRODUCCTION ENV",
+  "summary": "wordpress sample DEMO - does not really manage a wordpress site",
   "license": "Apache-2.0",
   "source": "",
   "project_page": null,
